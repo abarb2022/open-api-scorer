@@ -31,4 +31,25 @@ Ensures only valid OpenAPI specifications are scored, preventing false negatives
 Important aspects have higher weights, and partial credit is given for minor issues.
 
 
+### usage example
+python -m app.main samples/sample1.json     
 
+### Sample Output
+<pre> ```json {
+  "schema_types": {
+    "score": 18.5,
+    "max": 20,
+    "issues": [
+      {
+        "location": "components.schemas.Address",
+        "message": "Schema missing type definition",
+        "severity": "high"
+      }
+    ]
+  },
+  "total": {
+    "score": 86.5,
+    "max": 100,
+    "grade": "B"
+  }
+}``` </pre>
