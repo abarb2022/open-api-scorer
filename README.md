@@ -16,9 +16,6 @@ Provides specific, location-based improvement suggestions with severity indicato
 Works seamlessly with both local specification files and remote URLs.
 
 
-##### Validation Pipeline
-Automatically verifies OpenAPI spec validity before scoring to ensure accurate results.
-
 
 ### Design Highlights
 #### Strategy Pattern Implementation
